@@ -1,8 +1,8 @@
 public class ChessBoardRenderer {
 	public boolean isBlackSquare(int square) {
 
-		// WRITE YOUR LOGIC HERE...
-		System.out.println(square);
-		return true;
+		int row = square/8, column = square%8;
+		
+		return (row + column)%2==1;
 	}
 }
